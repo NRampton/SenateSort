@@ -1,0 +1,7 @@
+A few things that might be useful:
+
+Overall, I'd like a page that takes the current senate member records from ProPublica, and displays them as a sorted list. I'd like to be able to sort according to any of the keys ProPublica provides for each Senator, so we can see how they compare on any of these metrics at a glance.
+This is the main project for starters.
+
+I'd also be interested in dealing with populating a local database from an API, so as to reduce API calls and potentially speed things up.
+I don't know how this sort of thing would be regarded by ProPublica, however, and would need to get in touch with them before bothering to develop anything deployable.

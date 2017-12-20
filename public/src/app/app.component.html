@@ -1,0 +1,25 @@
+<h2>Sort your Senators</h2>
+<form (submit)="submitHandler(term)">
+<p><label>Search by: </label> <input type="text" [(ngModel)]="term"></p>
+<p><button type="submit">Submit</button></p>
+</form>
+<hr>
+<div *ngIf="isDataAvailable">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>State</th>
+        <th>Affil.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let senator of senators">
+        <td>{{ senator.last_name }}</td>
+        <td>{{ senator.state }}</td>
+        <td>{{ senator.party }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{{ senators['results'][0]['members'] | json }}
