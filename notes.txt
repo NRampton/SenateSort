@@ -5,3 +5,5 @@ This is the main project for starters.
 
 I'd also be interested in dealing with populating a local database from an API, so as to reduce API calls and potentially speed things up.
 I don't know how this sort of thing would be regarded by ProPublica, however, and would need to get in touch with them before bothering to develop anything deployable.
+
+Running into a now-familiar problem: I'm trying to extract the keys from a senator object when it comes back, but the order of operations during initialization is making that tricky. So make the initialization of the search terms part of the successful return of the senators from the service.

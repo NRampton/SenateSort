@@ -6,13 +6,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SenatorService } from './senator.service';
+import { SenateResolverService } from './senate-resolver.service';
 import { SortPipe } from './sortpipe';
+import { SenateSortComponent } from './senate-sort/senate-sort.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SortPipe
+    SortPipe,
+    SenateSortComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { SortPipe } from './sortpipe';
     HttpClientModule
   ],
   providers: [
-    SenatorService
+    SenatorService,
+    SenateResolverService
   ],
   bootstrap: [AppComponent]
 })

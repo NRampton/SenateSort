@@ -1,6 +1,6 @@
 <h2>Sort your Senators</h2>
 <form (submit)="submitHandler(term)">
-<p><label>Search by: </label> <input type="text" [(ngModel)]="term"></p>
+<p><label>Search by: </label> <input name="term" type="text" [(ngModel)]="term"></p>
 <p><button type="submit">Submit</button></p>
 </form>
 <hr>
@@ -23,3 +23,4 @@
   </table>
 </div>
 {{ senators['results'][0]['members'] | json }}
+{{ terms }}
